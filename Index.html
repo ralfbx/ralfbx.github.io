@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CV Ralf</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <!--  Adinda toegevoegd:  -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>	
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+        <script src="js/script.js"></script>
+ 	    <script>
+			/* Adinda toegevoegd */
+			/* https://www.pluralsight.com/guides/how-to-activate-animation-when-the-content-scrolls-into-view */
+			
+			$(document).ready(function() {
+                
+				/*
+                $('#html').waypoint(function() {
+                  $('#html').css({
+                    animation: "html 2s",
+                    opacity: "1"
+                  });
+                }, { offset: '95%' });
+				
+                $('#php').waypoint(function() {
+                  $('#php').css({
+                    animation: "php 2s",
+                    opacity: "1"
+                  });
+                }, { offset: '95%' });	
+				
+                $('#css').waypoint(function() {
+                  $('#css').css({
+                    animation: "css 2s",
+                    opacity: "1"
+                  });
+                }, { offset: '95%' });	
+				
+                $('#bootstrap').waypoint(function() {
+                  $('#bootstrap').css({
+                    animation: "bootstrap 2s",
+                    opacity: "1"
+                  });
+                }, { offset: '95%' });	
+				
+                $('#php').waypoint(function() {
+                  $('#php').css({
+                    animation: "php 2s",
+                    opacity: "1"
+                  });
+                }, { offset: '95%' });	
+				
+                $('#javascript').waypoint(function() {
+                  $('#javascript').css({
+                    animation: "javascript 2s",
+                    opacity: "1"
+                  });
+                }, { offset: '95%' });	
+				
+                $('#jquery').waypoint(function() {
+                  $('#jquery').css({
+                    animation: "jquery 2s",
+                    opacity: "1"
+                  });
+                }, { offset: '95%' });					
+				
+				*/
+				
+				// Adinda: ik heb bij alle talen een classe animMe toegevoegd om bovenstaande code te kunnen vereenvoudigen naar onderstaande code:
+				let alleAnim = document.querySelectorAll('.animMe');
+				//console.log(alleAnim);
+				for (const eenAnim of alleAnim) {
+                    $('#'+eenAnim.id).waypoint(function() {
+                      $('#'+eenAnim.id).css({
+                        animation: eenAnim.id+" 2s",
+                        opacity: "1"
+                      });
+                    }, { offset: '95%' });						
+				}
+
+            });
+		</script>
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="60">
+        
+ <!-- ------------- MENU ------------- -->
+        
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#ik">IK</a></li>
+                        <li><a href="#webVaard">VAARDIGHEDEN</a></li>
+                        <li><a href="#onderwijs">ONDERWIJS</a></li>
+                        <li><a href="#werkervaring">WERKERVARING</a></li>
+                        <li><a href="#talen">TALEN</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#cv">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<!-- ------------- INLEIDING ------------- -->
+        
+        <section id="ik" class="container-fluid">
+            <div class="heading">
+                <h2 class="italic">"Hallo, ik ben Ralf !"</h2>
+                <div class="col-xs-8 col-md-4 profile-picture">
+                    <img src="img/me2.jpg" alt="Ralf" class="img-circle">
+                </div>
+                <h1><span>junior</span> webontwikkelaar</h1>
+            </div>
+        </section>
+        
+<!-- ------------- TECHNISCHE VAARDIGHEDEN ------------- -->
+        
+        <section id="webVaard">
+            <div class="blue-divider"></div>
+            <div class="heading">
+                <h3>TECHNISCHE VAARDIGHEDEN</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+                            <h5>php - <span class="progress-value" data-percent="65">65%</span></h5>
+                            <div class="bar"><span class="animMe" id="php"></span></div>
+                        </div>
+                        <div class="container-fluid">
+                            <h5>javascript - <span class="progress-value" data-percent="60">60%</span></h5>
+                            <div class="bar"><span class="animMe" id="javascript"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+                            <h5>html - <span class="progress-value" data-percent="80">80%</span></h5>
+                            <div class="bar"><span class="animMe" id="html"></span></div>
+                        </div>
+                        <div class="container-fluid">
+                            <h5>css - <span class="progress-value" data-percent="80">80%</span></h5>
+                            <div class="bar"><span class="animMe" id="css"></span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+<!-- -------------------------- -->
+
+        <section id="grafVaard">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+                            <h5>Mac OS X - <span class="progress-value" data-percent="90">90%</span></h5>
+                            <div class="bar"><span class="animMe" id="macosx"></span></div>
+                        </div>
+                        <div class="container-fluid">
+                            <h5>Adobe Dreamweaver - <span class="progress-value" data-percent="80">80%</span></h5>
+                            <div class="bar"><span class="animMe" id="dreamweaver"></span></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+                            <h5>Adobe Photoshop - <span class="progress-value" data-percent="90">90%</span></h5>
+                            <div class="bar"><span class="animMe" id="photoshop"></span></div>
+                        </div>
+                        <div class="container-fluid">
+                            <h5>Adobe Illustrator - <span class="progress-value" data-percent="90">90%</span></h5>
+                            <div class="bar"><span class="animMe" id="illustrator"></span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+<!-- ------------- ONDERWIJS ------------- -->
+
+        <section id="onderwijs">
+            <div class="container">
+                <div class="blue-divider"></div>
+                <div class="heading">
+                <h3>onderwijs</h3>
+            </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="onderwijs-block">
+                            <p>2005-2007</p>
+                            <span class="glyphicon glyphicon-certificate"></span>
+                            <h4>Institut de la Providence<br><span class="italic">Ciney</span></h4>
+                            <h3>Humaniora <br> met <br> informaticakeuze</h3><br>
+                            <div class="white-divider"></div>
+                            <p class="italic">CESS</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="onderwijs-block">
+                            <p>2007-2012</p>
+                            <span class="glyphicon glyphicon-certificate"></span>
+                            <h4>Haute École Albert Jacquard<br><span class="italic">Namen</span></h4>
+                            <h3>Bachelor<br>Grafische<br>Vormgeving</h3><br>
+                            <div class="white-divider"></div>
+                            <p class="italic">Diploma (Onderscheiding)</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="onderwijs-block">
+                            <p>2021-2022</p>
+                            <span class="glyphicon glyphicon-certificate"></span>
+                            <h4>VDAB<br><span class="italic">Gent</span></h4>
+                            <h3>opleiding<br>PHP<br>Webontwikkelaar</h3><br>
+                            <div class="white-divider"></div>
+                            <p class="italic">Diploma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!-- ------------- WERKERVARING ------------- -->
+
+        <section id="werkervaring">
+            
+            <div class="container">
+                <div class="white-divider"></div>
+                <div class="heading">
+                    <h3>WERKERVARING</h3>
+                </div>
+                <ul class="timeline">
+                    
+                    <li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Graphius <span class="italic">Oostakker</span></h4>
+                                    <h3>Drukafwerker (vouwmachine)</h3>
+                                    <p><small class="glyphicon glyphicon-calendar"></small> 2017-2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container-inverted">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Créastyl Concept <span class="italic">Sart-Bernard</span></h4>
+                                    <h3>Bedrijfstage als grafische ontwerper</h3>
+                                    <p><small class="glyphicon glyphicon-calendar"></small> 2010-2011</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="italic">layout, logo, ontwerp, fotobewerking, web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div> 
+        </section>
+
+<!-- ------------- TALEN ------------- -->        
+
+        <section id="talen">
+            <div class="blue-divider"></div>
+            <div class="heading">
+                <h3>Talen</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="container-fluid">
+                            <div class="chart" data-percent="66,6">B2</div>
+                            <h5>Nederlands</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container-fluid">
+                            <div class="chart" data-percent="66,6">B2</div>
+                            <h5>Engels</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container-fluid">
+                            <div class="chart" data-percent="33,3">A2</div>
+                            <h5>Duits</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="container-fluid">
+                            <div class="chart" data-percent="100">moedertaal</div>
+                            <h5>Frans</h5>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </section>
+
+<!-- ------------- PORTFOLIO ------------- -->
+
+        <section id="portfolio">
+            <div class="container">
+                <div class="white-divider"></div>
+                <div class="heading">
+                    <h3>PORTFOLIO</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="thumbnail" href="pizzeria/index.php" target="_blank">
+                            <img src="img/pizzeria.png" alt="pizzeria">
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="thumbnail" href="#portfolio" target="_blank">
+                            <img src="img/sample.png" alt="sample">
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="thumbnail btn btn-lg btn-primary" href="#" data-toggle="modal" data-target="#largeModal">
+                            <img src="img/grafische_vormgeving.png" alt="sample">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a class="thumbnail" href="#portfolio" target="_blank">
+                            <img src="img/sample.png" alt="sample">
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="thumbnail" href="videotheek/index.php" target="_blank">
+                            <img src="img/videotheek.png" alt="videotheek">
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="thumbnail" href="#portfolio" target="_blank">
+                            <img src="img/sample.png" alt="sample">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- modal -->
+                <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- carousel -->
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data target="#myCarousel" data-slide-to="1"></li>
+                                        <li data target="#myCarousel" data-slide-to="2"></li>
+                                        <li data target="#myCarousel" data-slide-to="3"></li>
+                                        <li data target="#myCarousel" data-slide-to="4"></li>
+                                        <li data target="#myCarousel" data-slide-to="5"></li>
+                                        <li data target="#myCarousel" data-slide-to="6"></li>
+                                        <li data target="#myCarousel" data-slide-to="7"></li>
+                                        <li data target="#myCarousel" data-slide-to="8"></li>
+                                        <li data target="#myCarousel" data-slide-to="9"></li>
+                                        <li data target="#myCarousel" data-slide-to="10"></li>
+                                        <li data target="#myCarousel" data-slide-to="11"></li>
+                                        <li data target="#myCarousel" data-slide-to="12"></li>
+                                        <li data target="#myCarousel" data-slide-to="13"></li>
+                                        <li data target="#myCarousel" data-slide-to="14"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active"><img src="img/architecture.jpg" alt="architecture"></div>
+                                        <div class="item"><img src="img/artissimo.jpg" alt="artissimo"></div>
+                                        <div class="item"><img src="img/bic.jpg" alt="bic"></div>
+                                        <div class="item"><img src="img/botanique.jpg" alt="botanique"></div>
+                                        <div class="item"><img src="img/citadelle.jpg" alt="citadelle"></div>
+                                        <div class="item"><img src="img/illustrations.jpg" alt="illustrations"></div>
+                                        <div class="item"><img src="img/krokz01.jpg" alt="krokz01"></div>
+                                        <div class="item"><img src="img/krokz02.jpg" alt="krokz02"></div>
+                                        <div class="item"><img src="img/krokz03.jpg" alt="krokz03"></div>
+                                        <div class="item"><img src="img/la_torre.jpg" alt="la_torre"></div>
+                                        <div class="item"><img src="img/krokz_packs.jpg" alt="krokz_packs"></div>
+                                        <div class="item"><img src="img/krokz_all.jpg" alt="krokz_all"></div>
+                                        <div class="item"><img src="img/elvis.jpg" alt="elvis"></div>
+                                        <div class="item"><img src="img/photomontages.jpg" alt="photomontages"></div>
+                                        <div class="item"><img src="img/rolling.jpg" alt="rolling"></div>
+                                    </div>
+                                    <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ------------- CV ------------- -->
+        
+        <section id="cv" class="text-center">
+            <div class="container">
+                <div class="blue-divider"></div>
+                <div class="heading">
+                    <h3>CV</h3>
+                </div>
+                <div id="downloadCv">
+                    <a href="docs/ralfbouffioux_cv.pdf" class="button1">Download CV</a>
+                </div>
+            </div>
+        </section>
+        
+<!-- ------------- FOOTER ------------- -->
+        
+        <footer class="text-center">
+            <a href="#ik">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <h5>© 2022 Ralf Bouffioux</h5>
+        </footer>
+    </body>
+</html>
+
+

@@ -1,0 +1,548 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* -------------- ALGEMEEN -------------- */
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Newsreader', serif;
+    letter-spacing: 2px;
+}
+p, small {
+    font-size: 1em;
+    font-family: 'Newsreader', serif;
+}
+h1, h3, h5 {
+    text-transform: uppercase;
+}
+img {
+    max-width:100%;
+    height: auto;
+}
+section {
+    padding: 45px 0 60px 0;
+}
+section .heading {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.italic {
+    font-style: italic;
+}
+.blue-divider {
+    width: 100px;
+    height: 2px;
+    background: #004165;
+    margin: 0 auto;
+}
+.white-divider {
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;
+}
+ul, ol {
+    list-style: none;
+}
+
+/* -------------- MENU -------------- */
+
+.navbar {
+    background: #004165;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar li a {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #004165 !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-style: none;
+}
+.icon-bar {
+    background-color: #fff !important;
+}
+
+/* -------------- IK -------------- */
+
+#ik {
+    padding-top: 100px;
+    background-image: linear-gradient(to bottom right, #004165, #00ebff);
+}
+.profile-picture {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+#ik h1 {
+    color: #004165;
+}
+#ik h1 span {
+    color: #fff;
+}
+#ik h2 {
+    color: #fff;
+}
+
+/* -------------- TECHNISCHE VAARDIGHEDEN -------------- */
+
+#webVaard {
+    background: #dafcff;
+}
+#webVaard h3 {
+    color: #004165;
+}
+#webVaard .container-fluid {
+    height: 100%;
+    margin: 30px 20px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#webVaard .progress-value {
+    color: #004165;
+}
+#webVaard .bar {
+    background: #fff;
+    display: block;
+    height: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4);
+}
+.bar span {
+    height: 15px;
+    float: left;
+    background: #004165;
+}
+#php {
+    width: 65%;
+    /*animation: php 2s;*/
+}
+@keyframes php {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 65%;
+    }
+}
+#javascript {
+    width: 60%;
+    /*animation: javascript 2s;*/
+}
+@keyframes javascript {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 60%;
+    }
+}
+#html {
+    width: 80%;
+    /*animation: html 2s;*/
+}
+@keyframes html {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 80%;
+    }
+}
+#css {
+    width: 80%;
+    /*animation: css 2s;*/
+}
+@keyframes css {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+/* ----------------------------------*/
+
+#grafVaard {
+    background-image: linear-gradient(to bottom right, #004165, #00ebff);
+}
+#grafVaard .container-fluid {
+    height: 100%;
+    margin: 30px 20px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#grafVaard .progress-value {
+    color: #dafcff;
+}
+#grafVaard h5 {
+    color: #fff;
+}
+#grafVaard .bar{
+    background: #fff;
+    display: block;
+    height: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #fff;
+}
+.bar span {
+    height: 15px;
+    float: left;
+    background: #004165;
+}
+
+#macosx {
+    width: 90%;
+    /*animation: macosx 2s;*/
+}
+@keyframes macosx {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 90%;
+    }
+}
+#dreamweaver {
+    width: 80%;
+    /*animation: dreamweaver 2s;*/
+}
+@keyframes dreamweaver {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 80%;
+    }
+}
+#photoshop {
+    width: 90%;
+    /*animation: photoshop 2s;*/
+}
+@keyframes photoshop {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 90%;
+    }
+}
+#illustrator {
+    width: 90%;
+    /*animation: illustrator 2s;*/
+}
+@keyframes illustrator {
+    0% {
+        width: 0%;
+        background: #00ebff;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+/* -------------- ONDERWIJS -------------- */
+
+#onderwijs {
+    background: #dafcff;
+}
+#onderwijs h3 {
+    color: #004165;
+}
+.onderwijs-block {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0px;
+    background: #004165;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
+}
+.onderwijs-block h5 {
+    color: #dafcff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.onderwijs-block .glyphicon {
+    color: #dafcff;
+    font-size: 40px;
+}
+.onderwijs-block p .glyphicon {
+    font-size: 15px;
+}
+#onderwijs .onderwijs-block h3 {
+    color: #fff;
+}
+.onderwijs-block h4 {
+    color: #00ebff;
+    margin-bottom: 20px;
+}
+.onderwijs-block p {
+    color: #fff;
+}
+.onderwijs-block .white-divider {
+    margin-bottom: 20px;
+}
+
+/* -------------- WERKERVARING -------------- */
+
+#werkervaring {
+    background-image: linear-gradient(to bottom right, #004165, #00ebff);
+}
+#werkervaring .heading h3 {
+    color: #fff;
+}
+.timeline {
+    padding: 30px 10px;
+    position: relative;
+}
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 4px;
+    background-color: #004165;
+    left: 50%;
+    margin-left: -2.5px;
+}
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline > li:after {
+    clear: both;
+}
+.timeline >li:before, .timeline > li:after {
+    content: " ";
+    display: table;
+}
+.timeline li .timeline-badge {
+    color: #004165;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.timeline-panel-container {
+    width: 50%;
+    float: left;
+}
+.timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+}
+.timeline-panel {
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    border-radius: 5px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0,0,0, 0.175);
+    background: #fff;
+}
+.timeline-panel-container-inverted .timeline-panel {
+    float: left;
+    margin-left: 40px;
+}
+.timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+.timeline-panel-container-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+.timeline-heading h3 {
+    color: #004165;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.timeline-heading h4 {
+    color: #004165;
+}
+
+/* -------------- TALEN -------------- */
+
+#talen {
+    background: #dafcff;
+}
+#talen h3 {
+    color: #004165;
+}
+#talen .row {
+    text-align: center;
+}
+#talen .container-fluid {
+    height: 100%;
+    width: 160px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#talen .container-fluid h5 {
+    text-align: center;
+    color: #004165;
+}
+#talen .container-fluid .chart {
+    position: relative;
+    display: block;
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160px;
+    color: #004165;
+}
+#talen .container-fluid canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    widht: 100%;
+    height: 100%;
+}
+
+/* -------------- PORTEFOLIO -------------- */
+#portfolio {
+    background-image: linear-gradient(to bottom right, #004165, #00ebff);
+}
+#portfolio h3 {
+    color: #fff;
+}
+#portfolio .thumbnail {
+    padding: 2px;
+    box-shadow: none;
+}
+#portfolio .thumbnail img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#portfolio .thumbnail img:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+/* CAROUSEL */
+#largeModal {
+    max-width: 100%;
+}
+#myCarousel {
+    max-width: 100%;
+}
+.btn {
+    color: #004165;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.btn:hover {
+    background: #004165;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* -------------- CV -------------- */
+#cv {
+    background: #dafcff;
+}
+
+#cv h3 {
+    color: #004165;
+}
+
+.button1 {
+    font-weight: bold;
+    background: #004165;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.button1:hover {
+    background: #00ebff;
+    color: #004165;
+    text-decoration: none;
+}
+
+/* -------------- FOOTER -------------- */
+footer {
+    background: #004165;
+    padding: 20px 0 40px;
+}
+
+footer .glyphicon {
+    font-size: 25px;
+    margin: 20px;
+    color: white;
+    height: 30px;
+}
+
+footer .glyphicon:hover {
+    color: #00ebff;
+    font-size: 27px;
+}
+
+footer h5 {
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+
+
+
+

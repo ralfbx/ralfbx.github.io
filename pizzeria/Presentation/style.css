@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------- RESET --------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    text-decoration: none;
+    border-spacing: 0px;
+}
+
+/* --------------- BODY --------------- */
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    min-width: 200px;
+    min-height: 25px;
+    background-color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    border:2px solid black;
+}
+button:hover {
+    background-color: #f63000;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border:0;
+    cursor: pointer;
+}
+
+tr {
+    height: 50px;
+}
+input {
+    width: 100%;
+}
+
+/* --------------- HEADER --------------- */
+
+header {
+    background-color: #f63000;
+    width: 100%;
+    height: 150px;
+    padding: 30px 0px 40px 60px;
+    position: fixed;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+h1 {
+    padding-bottom: 15px;
+}
+
+h1 a {
+    letter-spacing: 3px;
+    font-size: 50px;
+    color: white;
+}
+nav button {
+    background-color: #f63000;
+    color: white;
+    border:2px solid white;
+}
+nav button:hover {
+    background-color: white;
+    color: black;
+    border:0;
+}
+
+
+/* --------------- INHOUD --------------- */
+
+.container {
+    display: flex;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --------------- DIVLEFT --------------- */
+
+.divleft {
+    border: 1px solid black;
+    width: 60%;
+    margin: 180px 0px 30px 30px;
+    padding: 30px;
+    float: left;
+}
+
+#menu tr td {
+    border-bottom: 1px solid black;
+    vertical-align: middle;
+    font-size: 20px;
+    text-align: center;
+}
+
+#menu img {
+    width: 100px;
+    border-radius: 3px;
+}
+
+#plus {
+    background-color: white;
+    color: #59a100;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid #59a100;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#plus:hover {
+    background-color: #59a100;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#login input {
+    width: 50%;
+}
+#registratie tr, #betalingform tr, #login tr {
+    height: 30px;
+}
+
+#txtBemerkingen {
+    height: 50px;
+}
+
+.betalingPic {
+    width: 100px;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.betalingPic:hover {
+    border: 3px solid #59a100;
+}
+
+#betaling td {
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* --------------- DIVRIGHT --------------- */
+
+.divright {
+    width: 30%;
+    margin: 180px 30px 30px 60px;
+    padding: 30px;
+    border: 1px solid black;
+    float: right;
+}
+
+#mandjetitle {
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #f63000;
+}
+
+#mandjepic {
+    width: 30px;
+}
+
+#maandje #infos {
+    height: 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#maandje tbody tr td {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#maandje tfoot tr td {
+    text-align: center;
+}
+
+#min {
+    background-color: white;
+    color: #f63000;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid #f63000;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#min:hover {
+    background-color: #f63000;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#mandjepic {
+    width: 40px;
+}
+
+
+/* --------------- FOOTER --------------- */
+
+footer {
+    height: 100px;
+    padding: 20px 0px 0px 60px;
+    margin: 0;
+    color: black;
+    border-top: 1px solid black;
+}
+
+#adres {
+    float:left;
+}
+
+#contact {
+    padding: 0px 60px;
+    float:left;
+}
+
+#contact a {
+    color: black;
+}
+
+#contact a:hover {
+    color: #59a100;
+    cursor: pointer;
+}
