@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         
-        <!--  Adinda toegevoegd:  -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>	
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,66 +23,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
         <script src="js/script.js"></script>
  	    <script>
-			/* Adinda toegevoegd */
 			/* https://www.pluralsight.com/guides/how-to-activate-animation-when-the-content-scrolls-into-view */
 			
 			$(document).ready(function() {
-                
-				/*
-                $('#html').waypoint(function() {
-                  $('#html').css({
-                    animation: "html 2s",
-                    opacity: "1"
-                  });
-                }, { offset: '95%' });
 				
-                $('#php').waypoint(function() {
-                  $('#php').css({
-                    animation: "php 2s",
-                    opacity: "1"
-                  });
-                }, { offset: '95%' });	
-				
-                $('#css').waypoint(function() {
-                  $('#css').css({
-                    animation: "css 2s",
-                    opacity: "1"
-                  });
-                }, { offset: '95%' });	
-				
-                $('#bootstrap').waypoint(function() {
-                  $('#bootstrap').css({
-                    animation: "bootstrap 2s",
-                    opacity: "1"
-                  });
-                }, { offset: '95%' });	
-				
-                $('#php').waypoint(function() {
-                  $('#php').css({
-                    animation: "php 2s",
-                    opacity: "1"
-                  });
-                }, { offset: '95%' });	
-				
-                $('#javascript').waypoint(function() {
-                  $('#javascript').css({
-                    animation: "javascript 2s",
-                    opacity: "1"
-                  });
-                }, { offset: '95%' });	
-				
-                $('#jquery').waypoint(function() {
-                  $('#jquery').css({
-                    animation: "jquery 2s",
-                    opacity: "1"
-                  });
-                }, { offset: '95%' });					
-				
-				*/
-				
-				// Adinda: ik heb bij alle talen een classe animMe toegevoegd om bovenstaande code te kunnen vereenvoudigen naar onderstaande code:
 				let alleAnim = document.querySelectorAll('.animMe');
-				//console.log(alleAnim);
 				for (const eenAnim of alleAnim) {
                     $('#'+eenAnim.id).waypoint(function() {
                       $('#'+eenAnim.id).css({
@@ -436,7 +380,7 @@
                     <h3>CV</h3>
                 </div>
                 <div id="downloadCv">
-                    <a href="docs/ralfbouffioux_cv.pdf" target="_blank" class="button1">Download CV</a>
+                    <a target="_blank" class="button1" href="./docs/ralfbouffioux_cv.pdf" onclick="javascript:windows.open('link', [options]);">Download CV</a>
                 </div>
             </div>
         </section>
