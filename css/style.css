@@ -53,6 +53,10 @@ ul, ol {
     list-style: none;
 }
 
+a, a:hover, a:focus, a:active a:visited {
+    text-decoration: none;
+    color: inherit;
+}
 /* -------------- MENU -------------- */
 
 .navbar {
@@ -499,22 +503,22 @@ ul, ol {
     color: #004165;
 }
 
-.button1 {
+.button1, .button1:visited {
     font-weight: bold;
-    background: #004165;
+    background-color: #004165;
     text-transform: uppercase;
+    text-decoration: none;
     color: #fff;
     display: inline-block;
     margin-top: 20px;
     padding: 18px 50px;
     border-radius: 3px;
-    transition: all 0.3s;
 }
-
-.button1:hover {
-    background: #00ebff;
+.button1:hover, .button1:active {
+    background-color: #00ebff;
     color: #004165;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 /* -------------- FOOTER -------------- */
